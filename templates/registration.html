@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Регистрация{% endblock %}
+{% block content %}
+    <div class="container container--form">
+        <form class="form" action="#">
+            <h1 class="heading heading--centered container__heading">Регистрация</h1>
+            <input class="input form__input" type="email" placeholder="Email">
+            <input class="input form__input" type="password" placeholder="Пароль">
+            <button class="button button-fullwidth form__submit">Зарегистрироваться</button>
+            <a class="button button--text button-fullwidth" href="{{ url_for('login') }}">Войти</a>
+        </form>
+    </div>
+{% endblock %}

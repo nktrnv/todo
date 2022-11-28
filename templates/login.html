@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Вход{% endblock %}
+{% block content %}
+    <div class="container container--form">
+        <form class="form" action="#">
+            <h1 class="heading heading--centered container__heading">Вход</h1>
+            <input class="input form__input" type="email" placeholder="Email">
+            <input class="input form__input" type="password" placeholder="Пароль">
+            <a class="button button--text" href="{{ url_for('password-recovery') }}">Восстановить пароль</a>
+            <button class="button button-fullwidth form__submit">Войти</button>
+            <a class="button button--text button-fullwidth" href="{{ url_for('registration') }}">Зарегистрироваться</a>
+        </form>
+    </div>
+{% endblock %}
